@@ -35,6 +35,10 @@
       background-color: var(--color-acento-hover);
     }
 
+    &:active {
+      transform: translateY(1px);
+    }
+
     &:focus-visible {
       @include foco-visible;
     }
@@ -42,6 +46,7 @@
     &:disabled {
       opacity: 0.5;
       cursor: not-allowed;
+      transform: none;
     }
 
     &--bloque {

@@ -26,15 +26,54 @@
 
 @layer components {
   .turno {
+    position: relative;
     display: grid;
     gap: var(--espacio-3xs);
+    min-block-size: 2.75rem;
     padding: var(--espacio-s);
     border: 1px solid var(--color-borde);
     border-radius: var(--radio-tarjeta);
     background-color: var(--color-superficie);
+    color: var(--color-texto);
     cursor: pointer;
 
-    // TODO: .turno__control, .turno__hora, .turno__estado
-    // TODO: estados seleccionado, ocupado y foco
+    &__control {
+      accent-color: var(--color-acento);
+      inline-size: 1rem;
+      block-size: 1rem;
+    }
+
+    &__hora {
+      font-size: var(--paso-1);
+      font-weight: 700;
+    }
+
+    &__estado {
+      font-size: 0.875rem;
+
+      &::before {
+        content: "Disponible · ";
+      }
+    }
+
+    // Estado seleccionado
+    &:has(:checked) {
+      border: 2px solid var(--color-acento);
+      background-color: var(--color-acento-tenue);
+      font-weight: 700;
+    }
+
+    // Estado ocupado
+    &:has(:disabled) {
+      border-style: dashed;
+      background-color: var(--color-fondo);
+      cursor: not-allowed;
+      opacity: 0.65;
+    }
+
+    // Foco accesible mediante teclado
+    &:has(:focus-visible) {
+      @include foco-visible;
+    }
   }
 }

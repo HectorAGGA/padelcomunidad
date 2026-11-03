@@ -1,0 +1,31 @@
+@use "../abstracts" as *;
+
+@layer components {
+  .aviso {
+    display: grid;
+    gap: var(--espacio-2xs);
+    max-inline-size: 36rem;
+    padding: var(--espacio-m);
+    border: 1px solid var(--color-acento);
+    border-inline-start-width: 0.35rem;
+    border-radius: var(--radio-tarjeta);
+    background-color: var(--color-acento-tenue);
+    color: var(--color-texto);
+
+    &__titulo {
+      margin: 0;
+      font-weight: 700;
+    }
+
+    &__importe,
+    &__telefono {
+      margin: 0;
+    }
+
+    &__concepto {
+      margin: 0;
+      font-family: var(--fuente-mono);
+      font-size: var(--paso-menos-1);
+    }
+  }
+}

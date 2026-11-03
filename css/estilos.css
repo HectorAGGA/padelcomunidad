@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @layer reset, tokens, base, layout, components, utilities;
 @layer tokens {
   :root {
@@ -234,6 +235,9 @@
   .boton:hover {
     background-color: var(--color-acento-hover);
   }
+  .boton:active {
+    transform: translateY(1px);
+  }
   .boton:focus-visible {
     outline: 3px solid var(--color-foco);
     outline-offset: 2px;
@@ -241,6 +245,7 @@
   .boton:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+    transform: none;
   }
   .boton--bloque {
     inline-size: 100%;
@@ -256,13 +261,46 @@
 }
 @layer components {
   .turno {
+    position: relative;
     display: grid;
     gap: var(--espacio-3xs);
+    min-block-size: 2.75rem;
     padding: var(--espacio-s);
     border: 1px solid var(--color-borde);
     border-radius: var(--radio-tarjeta);
     background-color: var(--color-superficie);
+    color: var(--color-texto);
     cursor: pointer;
+  }
+  .turno__control {
+    accent-color: var(--color-acento);
+    inline-size: 1rem;
+    block-size: 1rem;
+  }
+  .turno__hora {
+    font-size: var(--paso-1);
+    font-weight: 700;
+  }
+  .turno__estado {
+    font-size: 0.875rem;
+  }
+  .turno__estado::before {
+    content: "Disponible · ";
+  }
+  .turno:has(:checked) {
+    border: 2px solid var(--color-acento);
+    background-color: var(--color-acento-tenue);
+    font-weight: 700;
+  }
+  .turno:has(:disabled) {
+    border-style: dashed;
+    background-color: var(--color-fondo);
+    cursor: not-allowed;
+    opacity: 0.65;
+  }
+  .turno:has(:focus-visible) {
+    outline: 3px solid var(--color-foco);
+    outline-offset: 2px;
   }
 }
 @layer components {
@@ -337,6 +375,85 @@
     float: inline-start;
     margin-inline-end: var(--espacio-2xs);
     font-weight: 700;
+  }
+}
+@layer components {
+  .invitados {
+    display: grid;
+    gap: var(--espacio-xs);
+    max-inline-size: 24rem;
+    padding: var(--espacio-m);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-tarjeta);
+    background-color: var(--color-superficie);
+  }
+  .invitados__opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio-2xs);
+  }
+  .invitados__opcion {
+    position: relative;
+    display: grid;
+    flex: 1;
+    place-items: center;
+    min-inline-size: 2.75rem;
+    min-block-size: 2.75rem;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-control);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    cursor: pointer;
+  }
+  .invitados__opcion:where(:has(:checked)) {
+    border: 2px solid var(--color-acento);
+    background-color: var(--color-acento-tenue);
+    font-weight: 700;
+  }
+  .invitados__opcion:where(:has(:focus-visible)) {
+    outline: 3px solid var(--color-foco);
+    outline-offset: 2px;
+  }
+  .invitados__control {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+  }
+  .invitados__ayuda {
+    margin: 0;
+    color: var(--color-texto-suave);
+    font-size: var(--paso-menos-1);
+  }
+}
+@layer components {
+  .aviso {
+    display: grid;
+    gap: var(--espacio-2xs);
+    max-inline-size: 36rem;
+    padding: var(--espacio-m);
+    border: 1px solid var(--color-acento);
+    border-inline-start-width: 0.35rem;
+    border-radius: var(--radio-tarjeta);
+    background-color: var(--color-acento-tenue);
+    color: var(--color-texto);
+  }
+  .aviso__titulo {
+    margin: 0;
+    font-weight: 700;
+  }
+  .aviso__importe, .aviso__telefono {
+    margin: 0;
+  }
+  .aviso__concepto {
+    margin: 0;
+    font-family: var(--fuente-mono);
+    font-size: var(--paso-menos-1);
   }
 }
 @layer utilities {
