@@ -130,4 +130,8 @@
     color: var(--color-texto);
     font: inherit;
   }
+  
+  main {
+    padding-block: var(--espacio-l);
+  }
 }

@@ -1,0 +1,68 @@
+@use "../abstracts" as *;
+
+@layer layout {
+  .salto {
+    position: absolute;
+    z-index: 10;
+    inset-block-start: var(--espacio-s);
+    inset-inline-start: var(--espacio-s);
+    padding: var(--espacio-s);
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
+    transform: translateY(-250%);
+
+    &:focus {
+      transform: translateY(0);
+
+      @include foco-visible;
+    }
+  }
+
+  .cabecera {
+    padding-block: var(--espacio-s);
+    border-block-end: 1px solid var(--color-borde);
+    background-color: var(--color-superficie);
+
+    &__interior {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--espacio-s);
+    }
+
+    &__marca {
+      color: var(--color-texto);
+      font-size: var(--paso-1);
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+
+  .menu__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio-xs);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .menu__enlace {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-texto);
+    text-decoration: none;
+
+    @include objetivo-tactil;
+
+    &:focus-visible {
+      @include foco-visible;
+    }
+
+    &[aria-current="page"] {
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+}

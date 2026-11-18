@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="845" viewBox="0 0 1540 845" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">Mapa de navegación · Pádel El Mirador</title><desc id="diagram-desc">Siete páginas. La cabecera y el pie enlazan a Turnos, Mis turnos, Normas, Aviso legal y Privacidad. El flujo de reserva enlaza Turnos, Confirmar reserva, Justificante y Mis turnos.</desc>
+<defs><marker id="gray-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#859197"/></marker><marker id="green-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#5e6231"/></marker></defs>
+<rect width="1540" height="845" fill="#ffffff"/>
+<text x="67" y="74" font-family="Arial, sans-serif" font-weight="700" font-size="32" fill="#1e293b">Mapa de navegación · Pádel El Mirador</text>
+<text x="67" y="113" font-family="Arial, sans-serif" font-size="15" fill="#64748b">FASE 2 · S04  |  7 páginas y 3 tipos de navegación</text>
+<path d="M555 259 L177.5 364" stroke="#859197" stroke-width="2.4" fill="none" marker-end="url(#gray-arrow)"/>
+<path d="M663 259 L472.5 364" stroke="#859197" stroke-width="2.4" fill="none" marker-end="url(#gray-arrow)"/>
+<path d="M770 259 L767.5 364" stroke="#859197" stroke-width="2.4" fill="none" marker-end="url(#gray-arrow)"/>
+<path d="M877 259 L1062.5 364" stroke="#859197" stroke-width="2.4" fill="none" marker-end="url(#gray-arrow)"/>
+<path d="M985 259 L1357.5 364" stroke="#859197" stroke-width="2.4" fill="none" marker-end="url(#gray-arrow)"/>
+<path d="M190 475 L190 563 L505 563 L505 642" fill="none" stroke="#5e6231" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#green-arrow)"/>
+<path d="M650 692 L895 692" fill="none" stroke="#5e6231" stroke-width="3.5" marker-end="url(#green-arrow)"/>
+<path d="M1040 642 L1040 565 L1357 565 L1357 475" fill="none" stroke="#5e6231" stroke-width="3.5" stroke-linejoin="round" marker-end="url(#green-arrow)"/>
+<rect x="515" y="159" width="510" height="100" rx="18" fill="#eaf1d6" stroke="#5e6231" stroke-width="2.5"/>
+<text x="770" y="205" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#1e293b">Cabecera y pie</text>
+<text x="770" y="233" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#526274">(en todas las páginas)</text>
+<rect x="55" y="375" width="245" height="100" rx="13" fill="#f5f8da" stroke="#5e6231" stroke-width="2.4"/>
+<text x="177.5" y="419" text-anchor="middle" font-size="20" font-weight="700" font-family="Arial,sans-serif" fill="#1e293b">Turnos</text>
+<text x="177.5" y="449" text-anchor="middle" font-size="15" font-family="Arial,sans-serif" fill="#526274">index.html</text>
+<rect x="350" y="375" width="245" height="100" rx="13" fill="#ffffff" stroke="#5e6231" stroke-width="2.4"/>
+<text x="472.5" y="419" text-anchor="middle" font-size="20" font-weight="700" font-family="Arial,sans-serif" fill="#1e293b">Normas</text>
+<text x="472.5" y="449" text-anchor="middle" font-size="15" font-family="Arial,sans-serif" fill="#526274">normas.html</text>
+<rect x="645" y="375" width="245" height="100" rx="13" fill="#ffffff" stroke="#5e6231" stroke-width="2.4"/>
+<text x="767.5" y="419" text-anchor="middle" font-size="20" font-weight="700" font-family="Arial,sans-serif" fill="#1e293b">Aviso legal</text>
+<text x="767.5" y="449" text-anchor="middle" font-size="15" font-family="Arial,sans-serif" fill="#526274">aviso-legal.html</text>
+<rect x="940" y="375" width="245" height="100" rx="13" fill="#ffffff" stroke="#5e6231" stroke-width="2.4"/>
+<text x="1062.5" y="419" text-anchor="middle" font-size="20" font-weight="700" font-family="Arial,sans-serif" fill="#1e293b">Privacidad</text>
+<text x="1062.5" y="449" text-anchor="middle" font-size="15" font-family="Arial,sans-serif" fill="#526274">privacidad.html</text>
+<rect x="1235" y="375" width="245" height="100" rx="13" fill="#f5f8da" stroke="#5e6231" stroke-width="2.4"/>
+<text x="1357.5" y="419" text-anchor="middle" font-size="20" font-weight="700" font-family="Arial,sans-serif" fill="#1e293b">Mis turnos</text>
+<text x="1357.5" y="449" text-anchor="middle" font-size="15" font-family="Arial,sans-serif" fill="#526274">mis-turnos.html</text>
+<rect x="360" y="642" width="290" height="100" rx="13" fill="#f5f8da" stroke="#5e6231" stroke-width="2.4"/>
+<text x="505.0" y="686" text-anchor="middle" font-size="20" font-weight="700" font-family="Arial,sans-serif" fill="#1e293b">Confirmar reserva</text>
+<text x="505.0" y="716" text-anchor="middle" font-size="15" font-family="Arial,sans-serif" fill="#526274">reserva.html</text>
+<rect x="895" y="642" width="290" height="100" rx="13" fill="#f5f8da" stroke="#5e6231" stroke-width="2.4"/>
+<text x="1040.0" y="686" text-anchor="middle" font-size="20" font-weight="700" font-family="Arial,sans-serif" fill="#1e293b">Justificante</text>
+<text x="1040.0" y="716" text-anchor="middle" font-size="15" font-family="Arial,sans-serif" fill="#526274">justificante.html</text>
+<rect x="109.5" y="316" width="136" height="29" rx="8" fill="#ffffff" stroke="#edf0f1" stroke-width="1"/>
+<text x="177.5" y="336" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#526274">Marca / menú</text>
+<rect x="406.5" y="316" width="132" height="29" rx="8" fill="#ffffff" stroke="#edf0f1" stroke-width="1"/>
+<text x="472.5" y="336" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#526274">Menú / pie</text>
+<rect x="741.5" y="316" width="52" height="29" rx="8" fill="#ffffff" stroke="#edf0f1" stroke-width="1"/>
+<text x="767.5" y="336" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#526274">Pie</text>
+<rect x="1036.5" y="316" width="52" height="29" rx="8" fill="#ffffff" stroke="#edf0f1" stroke-width="1"/>
+<text x="1062.5" y="336" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#526274">Pie</text>
+<rect x="1322.5" y="316" width="70" height="29" rx="8" fill="#ffffff" stroke="#edf0f1" stroke-width="1"/>
+<text x="1357.5" y="336" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#526274">Menú</text>
+<rect x="261.0" y="521" width="172" height="30" rx="7" fill="#ffffff" stroke="#e9eddb" stroke-width="1"/>
+<text x="347" y="542" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#385c2e">Botón Continuar</text>
+<rect x="659.0" y="649" width="228" height="30" rx="7" fill="#ffffff" stroke="#e9eddb" stroke-width="1"/>
+<text x="773" y="670" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#385c2e">Botón Confirmar reserva</text>
+<rect x="1099.0" y="526" width="202" height="30" rx="7" fill="#ffffff" stroke="#e9eddb" stroke-width="1"/>
+<text x="1200" y="547" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="600" fill="#385c2e">Enlace Ver mis turnos</text>
+<line x1="67" y1="775" x2="1475" y2="775" stroke="#e2e8f0"/>
+<text x="68" y="808" font-family="Arial,sans-serif" font-size="15" fill="#64748b">Arriba: enlaces del menú o pie, disponibles desde cualquier página.   Abajo: flujo de reserva de turno.</text>
+</svg>
