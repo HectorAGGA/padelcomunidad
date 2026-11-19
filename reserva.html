@@ -1,0 +1,189 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confirmar reserva · Pádel El Mirador</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__interior contenedor">
+      <a class="cabecera__marca" href="index.html">Pádel El Mirador</a>
+
+      <nav class="menu" aria-label="Principal">
+        <ul class="menu__lista">
+          <li>
+            <a class="menu__enlace" href="index.html">Turnos</a>
+          </li>
+          <li>
+            <a class="menu__enlace" href="mis-turnos.html">Mis turnos</a>
+          </li>
+          <li>
+            <a class="menu__enlace" href="normas.html">Normas</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+<main id="contenido" class="contenedor">
+  <h1>Confirmar reserva</h1>
+
+  <p>Revisa los datos de tu reserva antes de continuar.</p>
+
+  <section aria-labelledby="titulo-resumen">
+    <h2 id="titulo-resumen">Resumen del turno</h2>
+
+    <p>Ejemplo de reserva para la Fase 2.</p>
+
+    <dl>
+      <dt>Vivienda</dt>
+      <dd>2.º C</dd>
+
+      <dt>Fecha</dt>
+      <dd>21 de noviembre de 2026</dd>
+
+      <dt>Pista</dt>
+      <dd>Pista Central</dd>
+
+      <dt>Horario</dt>
+      <dd>09:00 – 10:15 (75 minutos)</dd>
+    </dl>
+  </section>
+
+  <form action="justificante.html" method="get">
+
+    <fieldset class="invitados">
+      <legend>Número de invitados</legend>
+
+      <div class="invitados__opciones">
+        <label class="invitados__opcion">
+          <input
+            class="invitados__control"
+            type="radio"
+            name="invitados"
+            value="0"
+            checked
+          >
+          <span>0</span>
+        </label>
+
+        <label class="invitados__opcion">
+          <input
+            class="invitados__control"
+            type="radio"
+            name="invitados"
+            value="1"
+          >
+          <span>1</span>
+        </label>
+
+        <label class="invitados__opcion">
+          <input
+            class="invitados__control"
+            type="radio"
+            name="invitados"
+            value="2"
+          >
+          <span>2</span>
+        </label>
+
+        <label class="invitados__opcion">
+          <input
+            class="invitados__control"
+            type="radio"
+            name="invitados"
+            value="3"
+          >
+          <span>3</span>
+        </label>
+      </div>
+
+      <p class="invitados__ayuda">
+        Máximo 3 invitados por reserva.
+      </p>
+    </fieldset>
+
+    <section class="aviso" aria-labelledby="titulo-aviso">
+      <h2 class="aviso__titulo" id="titulo-aviso">
+        Pago de invitados
+      </h2>
+
+      <p class="aviso__importe">
+        2,50 € por invitado no residente.
+      </p>
+
+      <p class="aviso__telefono">
+        Bizum: 600 000 000
+      </p>
+
+      <p class="aviso__concepto">
+        Concepto de ejemplo:
+        <code>PADEL 2.ºC 21NOV</code>
+      </p>
+
+      <p>
+        Si llevas invitados, realiza el pago antes de jugar.
+      </p>
+    </section>
+
+    <p>
+      <label>
+        <input
+          type="checkbox"
+          name="acepta-normas"
+          value="si"
+          required
+        >
+        He leído y acepto las
+        <a href="normas.html">normas de uso</a>.
+      </label>
+    </p>
+
+    <button class="boton" type="submit">
+      Confirmar reserva
+    </button>
+  </form>
+
+  <p>
+    <a href="index.html">Volver a Turnos</a>
+  </p>
+</main>
+
+
+  <footer class="pie">
+    <div class="pie__interior contenedor">
+      <address class="pie__datos">
+        Comunidad de Propietarios Urbanización El Mirador · CIF H-00000002<br>
+        Avenida de El Mirador, 14 · 00000 Localidad Ficticia<br>
+        <a href="mailto:administracion@elmirador.example">
+          administracion@elmirador.example
+        </a>
+      </address>
+
+      <nav aria-label="Legal">
+        <ul class="pie__enlaces">
+          <li>
+            <a href="aviso-legal.html">Aviso legal</a>
+          </li>
+          <li>
+            <a href="privacidad.html">Privacidad</a>
+          </li>
+          <li>
+            <a href="normas.html">Normas de uso</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="pie__nota">
+        <small>Proyecto académico ficticio · DIW 0615 · 2.º DAW</small>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
