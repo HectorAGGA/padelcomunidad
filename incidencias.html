@@ -1,0 +1,129 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Incidencias · Pádel El Mirador</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__interior contenedor">
+      <a class="cabecera__marca" href="index.html">Pádel El Mirador</a>
+
+      <nav class="menu" aria-label="Principal">
+        <ul class="menu__lista">
+          <li>
+            <a class="menu__enlace" href="index.html">Turnos</a>
+          </li>
+          <li>
+            <a class="menu__enlace" href="mis-turnos.html">Mis turnos</a>
+          </li>
+          <li>
+            <a class="menu__enlace" href="normas.html">Normas</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="contenedor">
+    <form action="incidencias.html">
+      <label>Tipo de incidencia: </label>
+      <div class="invitados__opciones">
+        <label class="invitados__opcion">
+          <input
+            class="invitados__control"
+            type="radio"
+            name="invitados"
+            value="Estado de la pista"
+            checked
+          >
+          <span>Estado de la pista</span>
+        </label>
+
+        <label class="invitados__opcion">
+          <input
+            class="invitados__control"
+            type="radio"
+            name="invitados"
+            value="Iluminacion o acceso"
+          >
+          <span>Iluminacion o acceso</span>
+        </label>
+
+        <label class="invitados__opcion">
+          <input
+            class="invitados__control"
+            type="radio"
+            name="invitados"
+            value="Reserva o pago"
+          >
+          <span>Reserva o pago</span>
+        </label>
+
+        <label class="invitados__opcion">
+          <input
+            class="invitados__control"
+            type="radio"
+            name="invitados"
+            value="Queja de convivencia"
+          >
+          <span>Queja de convivencia</span>
+        </label>
+      </div>
+      <label>Pista afectada:</label>
+      <input type="text">
+      <label>Fecha</label>
+      <input type="date" name="fecha">
+      <label>Descripcion</label>
+      <textarea name="desc"></textarea>
+      <label>Correo:</label>
+      <input type="email" name="correo"><br><br>
+      <label>Entiendo los terminos de <a href="privacidad.html">Privacidad</a>
+      <input type="checkbox" name="Check" required>
+      </label>
+
+      <button class="boton" type="submit">
+        Enviar incidencia
+      </button>
+    </form>
+    <p>
+      <a href="index.html">Volver a Turnos</a>
+    </p>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__interior contenedor">
+      <address class="pie__datos">
+        Comunidad de Propietarios Urbanización El Mirador · CIF H-00000002<br>
+        Avenida de El Mirador, 14 · 00000 Localidad Ficticia<br>
+        <a href="mailto:administracion@elmirador.example">
+          administracion@elmirador.example
+        </a>
+      </address>
+
+      <nav aria-label="Legal">
+        <ul class="pie__enlaces">
+          <li>
+            <a href="aviso-legal.html">Aviso legal</a>
+          </li>
+          <li>
+            <a href="privacidad.html">Privacidad</a>
+          </li>
+          <li>
+            <a href="normas.html">Normas de uso</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="pie__nota">
+        <small>Proyecto académico ficticio · DIW 0615 · 2.º DAW</small>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
