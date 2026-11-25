@@ -19,7 +19,7 @@
 
 - @import  hace que todas las variables, mixins y funciones sean accesibles globalmente. Esto dificulta enormemente que las personas (o las herramientas) sepan dónde se  define cada elemento. al contrario que @use o @forward.
 
-- Falso
+- Falso, si no lo compilas no se aplican los cambios
 
 ## A4
 
